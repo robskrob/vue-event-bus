@@ -3,19 +3,17 @@
 </template>
 
 <script>
-const EventBus = require('../bus');
+import EventBus from '../bus';
 
-module.exports = {
+export default {
   data: function () {
     EventBus.$on('say-hello', () => {
       this.message = 'Hello from Component A';
     });
 
     return {
-      message: 'Lonely Component Here!'
-    }
+      message: 'Lonely Component Here!',
+    };
   },
-
-
-}
+};
 </script>

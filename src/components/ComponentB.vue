@@ -1,15 +1,16 @@
 <template>
-  <div>{{ message }}
+  <div>
+    {{ message }}
 
     <component-c></component-c>
   </div>
 </template>
 
 <script>
-const ComponentC = require('./ComponentC');
-const EventBus = require('../bus');
+import ComponentC from './ComponentC';
+import EventBus from '../bus';
 
-module.exports = {
+export default {
   components: {
     ComponentC,
   },
@@ -20,8 +21,8 @@ module.exports = {
     });
 
     return {
-      message: 'Lonely Component Here!'
-    }
-  }
-}
+      message: 'Lonely Component Here!',
+    };
+  },
+};
 </script>
