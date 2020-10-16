@@ -1,6 +1,6 @@
 <template>
   <div>
-    {{ message }}
+    B: {{ message }}
 
     <component-c></component-c>
   </div>
